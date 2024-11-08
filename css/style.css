@@ -1,0 +1,80 @@
+body,
+table {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    width: 40%;
+    margin: 0 auto;
+    background: black;
+    color: white;
+}
+
+a {
+    width: 100%;
+    color: white;
+    float: left;
+    margin-top: 10px;
+}
+
+form {
+    margin: 0 auto;
+    display: flow;
+    padding: 32px;
+}
+
+h1 {
+    margin-top: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    width: 20%;
+    font-weight: bold;
+    float: left;
+}
+
+input[type=text],
+input[type=number] {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    width: fit-content;
+    margin: 5px;
+}
+
+table {
+    margin-top: 50px;
+    width: 100%;
+}
+
+thead {
+    text-align: center;
+    font-weight: bold;
+}
+
+thead td {
+    padding: 10px;
+}
+
+tbody td {
+    border: 1px solid;
+    padding: 6px;
+}
+
+td[name=precio] {
+    text-align: right;
+}
+
+td[name=precio]::before {
+    content: '$ ';
+    text-align: right;
+}

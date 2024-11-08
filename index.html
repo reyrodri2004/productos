@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Tienda :: Index</title>
+    <script src="./js/crud.js"></script>
+    <style>
+        @import url(./css/style.css);
+    </style>
+</head>
+
+<body onload="listar()">
+    <h1>Inicio</h1>
+    <br />
+    <br />
+    <a href="./crud/crear.html">Crear producto</a>
+    <a href="./crud/gestionar.html">Gestionar productos</a>
+    <br />
+
+    <div class="buttons">
+        <input type="button" onclick="ascendente()" value="Ordenar por precio (ascendente)" />
+        <input type="button" onclick="descendente()" value="Ordenar por precio (descendente)" />
+    </div>
+
+    <table id="productos">
+        <thead>
+            <tr>
+                <td colspan="3">Listado de productos</td>
+            </tr>
+            <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Precio</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="display: none;">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

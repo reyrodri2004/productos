@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tienda :: Crear producto</title>
+    <script src="../js/crud.js"></script>
+    <style>
+        @import url(../css/style.css);
+    </style>
+</head>
+
+<body>
+    <h1>Crear producto</h1>
+    <br />
+    <br />
+    <form method="post">
+        <label>Id</label>
+        <input id="id" name="campo" type="number" />
+        <br />
+        <label>Nombre</label>
+        <input id="nombre" name="campo" type="text" />
+        <br />
+        <label>Precio</label>
+        <input id="precio" name="campo" type="number" />
+        <br />
+        <br />
+        <div class="buttons">
+            <input type="submit" onclick="crear()" value="Crear" />
+            <input type="button" onclick="inicio()" value="Inicio" />
+            <input type="reset" value="Limpiar" />
+        </div>
+    </form>
+</body>
+
+</html>
